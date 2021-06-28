@@ -20,11 +20,23 @@ body {
 .white {
     color: white;
 }
+
+.active {
+    border: 2px solid greenyellow;
+}
+
+.link-active {
+    color: greenyellow;
+}
+
+.red {
+    color: red;
+}
 /* fine common */
 /* main  */
 main {
     width: 100vw;
-    height: 93vh;
+    height: 90vh;
     background-color: black;
     justify-content: center;
     align-items: center;
@@ -57,7 +69,7 @@ main {
 
 .view {
     position: absolute;
-    top: 5px;
+    top: 10px;
     right: 10px;
 }
 
@@ -65,7 +77,7 @@ main {
 .view .expand {
     color: white;
     display: inline;
-    padding: 3px;
+    padding: 5px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -90,6 +102,44 @@ main {
 /* footer  */
 footer {
     width: 100vw;
-    height: 7vh;
+    height: 10vh;
+    justify-content: space-between;
+    background-color: #212324;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link i {
+    font-size: 30px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    height: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-left {
+    width: 15%;
+    margin: 0 auto;
+}
+
+.footer-center {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.footer-right {
+    width: 10%;
+    margin: 0 auto;
+    background-color: #4a4b4c;
 }
 /* fine footer  */
