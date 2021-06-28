@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common */
+.flex {
+    display: flex;
+}
+/* fine common */
+/* main  */
+main {
+    width: 100vw;
+    height: 93vh;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    height: 87%;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.container .people{
+    background-image: url('../img/paesaggio.jpg');
+    background-size: cover;
+    width: calc(100% / 5 - 6px);
+    margin: 3px;
+    position: relative;
+}
+
+.people .name{
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+}
+/* fine main */
+/* footer  */
+footer {
+    width: 100vw;
+    height: 7vh;
+}
+/* fine footer  */
