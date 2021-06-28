@@ -8,6 +8,18 @@
 .flex {
     display: flex;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.shade {
+    background: linear-gradient(grey, black);
+}
+
+.white {
+    color: white;
+}
 /* fine common */
 /* main  */
 main {
@@ -16,6 +28,7 @@ main {
     background-color: black;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .container {
@@ -25,7 +38,7 @@ main {
     background-color: black;
 }
 
-.container .people{
+.container .people {
     background-image: url('../img/paesaggio.jpg');
     background-size: cover;
     width: calc(100% / 5 - 6px);
@@ -33,14 +46,45 @@ main {
     position: relative;
 }
 
-.people .name{
+.people .name {
     display: inline-block;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2px;
-    font-size: 14px;
     position: absolute;
     bottom: 0;
+}
+
+.view {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.view .speaker,
+.view .expand {
+    color: white;
+    display: inline;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.arrow {
+    width: 5%;
+    align-items: center;
+    flex-direction: column;
+    color: grey;
+}
+
+.arrow i {
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.right i {
+    color: rgb(90, 155, 240);
 }
 /* fine main */
 /* footer  */
